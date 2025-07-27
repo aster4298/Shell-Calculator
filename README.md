@@ -2,7 +2,7 @@
 
 ## About
 
-Welcome to my Web Application which is Shell Calculator this can be used to calculate shell points but it is not official made for fun.
+Welcome to my Web Application which is Shell Calculator this can be used to calculate shell points but it is not official made for fun..
 
 ## Features
 
