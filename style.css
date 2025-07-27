@@ -29,7 +29,7 @@ h1{
 }
 
 form{
-    height: 600px;
+    height: 550px;
     position: relative;
     width: 400px;
     background: #fad0c4;
@@ -47,7 +47,7 @@ form{
 }
 
 form input{
-    height: 30px;
+    height: 35px;
     width: 100%;
     border-radius: 5px;
     /* border: none; */
@@ -56,6 +56,12 @@ form input{
     color: rgb(4, 33, 255);
     text-shadow: 2px;
     margin-top: 20px;
+    text-indent: 0cap;
+    right: 1px;
+    top: 1px;
+    gap: 1px;
+
+border: 3px solid seagreen;
 
 }
 
@@ -77,13 +83,20 @@ button{
     transition: 0.3s all ease;
     margin-top: 60px;
     text-shadow: 2px 2px  rgb(255, 6, 6 );
+    overflow-y: hidden;
+    bottom: 2px;
+    text-align: center;
+    hanging-punctuation: 2px;
 }
 
 span{
     font-size: 22px;
     text-decoration: underline;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 700;
+    color: #000000;
+    overflow-y: hidden;
+    
 }
 
 #rights{
@@ -107,4 +120,125 @@ button:hover{
 
 button:hover p {
     transform: translateY(-6px);
+    justify-items: auto;
 }
+
+button:hover ~ span{
+    color: blue;
+}
+
+text{
+    color: red;
+}
+
+.test{
+color: white;
+font-display: auto;
+}
+
+#result{
+font-size: 22px;
+z-index: 10;
+position: relative;
+color: #000000;
+width: 600px;
+font-weight: 800;
+text-shadow: 2px 2px rgb(255, 255, 255);
+text-transform: capitalize;
+}
+
+.background-animation{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.circle{
+    position: absolute;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    animation: animate linear infinite;
+    z-index: 100;
+}
+
+.circle:nth-child(odd){
+    background-color: #56ffe3;
+    color: #fd1717;
+}
+
+.circle:nth-child(even){
+    background-color: #0d6c98;
+}
+
+.circle:nth-child(1){
+    top: 77%;
+    left: 88%;
+    animation-duration: 40s;
+    animation-delay: -3s;
+    transform-origin: 16vw -2vh;
+    box-shadow: 2px 2px 10px ;
+    
+}
+
+.circle:nth-child(2){
+    top: 42%;
+    left: 2%;
+    animation-duration: 53s ;
+    animation-delay: -29s;
+    transform-origin: -19vw 21vh;
+    box-shadow: 5px 5px 10px ;
+}
+
+.circle:nth-child(3){
+    top: 28%;
+    left: 18%;
+    animation-duration: 49s;
+    animation-delay: -8s;
+    transform-origin: -22vw 3vh;
+    box-shadow: 4px 4px 5px ;
+}
+
+.circle:nth-child(4){
+    top: 50%;
+    left: 79%;
+    animation-duration: 26s;
+    animation-delay: -21s;
+    transform-origin:-17vw -6vh ;
+    box-shadow: 2px 4px 5px ;
+}
+.circle:nth-child(5){
+    top: 46%;
+    left: 15%;
+    animation-duration: 36s;
+    animation-delay: -40s;
+    transform-origin: 4vw 0vh;
+    box-shadow: 4px 5px 10px ;
+}
+
+.circle:nth-child(6){
+    top: 77%;
+    left: 16%;
+    animation-duration: 31s;
+    animation-delay: -10s;
+    transform-origin: 18vw 4vh;
+    box-shadow: 2px 2px 4px ;
+}
+
+
+
+@keyframes animate {
+    0%{
+        transform:  rotate(0deg), translate3d(0,0);
+    }
+    
+
+    100%{
+        transform: rotate(360deg) translate3d(0, 0, 1px);
+    }
+    
+}
+

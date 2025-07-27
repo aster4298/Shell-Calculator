@@ -9,24 +9,32 @@
 </head>
 <body>
     <div class="container">
+        <div class="background-animation">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
 
         <div class="content">
 
             <h1>Shell Calculator</h1>
 
-            <form action="">
+            <form action="" id="shell-form">
                 <span>Project Name</span>
                 <input type="text" name="projectName" id="name" placeholder="Enter your project Name" required>
 
                 <span>Total No Hours</span>
-                <input type="text" name="hours" id="hours" required>
+                <input type="text" name="hours" id="hours" required placeholder="Enter Total Hours">
 
                 <span>Total No Votes </span>
-                <input type="text" id="votes" required>
+                <input type="text" id="votes" required placeholder="Enter Your Votes">
 
 
                 <button type="submit"><p>Calculate Shells </p></button>
-                <p id="rights">All Rights are Reserved by @Aster</p>
+                <p id="rights">All Rights are Reserved by @Aster.</p>
             </form>
 
 
@@ -35,6 +43,8 @@
 
         </div>
     </div>
+
+    <script src="javascript.js"></script>
     
 </body>
 </html>
